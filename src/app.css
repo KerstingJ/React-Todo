@@ -1,23 +1,28 @@
 .todoListContainer {
     width: 600px;
     margin: 0 auto;
-    text-align: center;
-
-    font-family: sans-serif;
+    text-align: left;
     font-size: 2rem;
+    
+    font-family: 'Indie Flower', cursive;
 
     padding: 20px 30px;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.4);
+    background: rgb(246, 255, 198)
+}
+
+h1 {
+    margin: 1rem 2rem;
 }
 
 .todoForm {
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid black;
-    margin: 1rem auto;
+    margin-left: 2rem;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+    border-radius: 10px;
 }
 
 .todoForm .clear {
@@ -25,7 +30,6 @@
 }
 .todoForm .clear:hover {
     background: rgba(200,50,50, 0.7);
-    font-weight: 500;
     color: white;
 }
 .todoForm .add {
@@ -35,7 +39,6 @@
 }
 .todoForm .add:hover {
     background: rgba(50,50,200, 0.7);
-    font-weight: 500;
     color: white;
 }
 
@@ -60,7 +63,6 @@
     border: 1px solid black;
 
     font-size: 18px;
-    font-weight: bolder;
 }
 
 .todoForm button:focus {
@@ -73,7 +75,13 @@
 }
 
 .todoList {
-    margin-bottom: 3rem;
+    margin: 3rem 0;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.todoList .todoItem {
+    border-bottom: 1.5px solid lightblue;
 }
 
 .todoList .todoItem:hover {
