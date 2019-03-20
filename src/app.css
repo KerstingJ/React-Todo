@@ -1,0 +1,89 @@
+.todoListContainer {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+
+    font-family: sans-serif;
+    font-size: 2rem;
+
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.4);
+}
+
+.todoForm {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    margin: 1rem auto;
+}
+
+.todoForm .clear {
+    background: rgba(200,50,50, 0.3);
+}
+.todoForm .clear:hover {
+    background: rgba(200,50,50, 0.7);
+    font-weight: 500;
+    color: white;
+}
+.todoForm .add {
+    border-left: none;
+    border-right: none;
+    background: rgba(50,50,200, 0.3);
+}
+.todoForm .add:hover {
+    background: rgba(50,50,200, 0.7);
+    font-weight: 500;
+    color: white;
+}
+
+.todoForm input {
+    height: 40px;
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid black;
+    padding-left: 10px;
+
+    font-size: 16px;
+}
+
+.todoForm input:focus {
+    outline: none;
+}
+
+.todoForm button {
+    height: 44px;
+    width: 160px;
+    border: 1px solid black;
+
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.todoForm button:focus {
+    outline: none;
+}
+
+.todoForm button:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+
+.todoList {
+    margin-bottom: 3rem;
+}
+
+.todoList .todoItem:hover {
+    background: lightgreen;
+}
+
+.todoList .todoItem.complete {
+    text-decoration-line: line-through;
+}
+
+.todoList .todoItem.complete:hover {
+    background: lightcoral;
+}
